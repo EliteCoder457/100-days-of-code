@@ -5,7 +5,8 @@ int main(){
     int vowel;
     printf("enter the character: ");
     scanf("%c",&x);
-    vowel = (x =='a' || x=='e' || x== 'i' || x== 'o' || x== 'u');
+    vowel = (x =='a' || x=='e' || x== 'i' || x== 'o' || x== 'u' ||
+    x =='A'|| x=='E' || x== 'I' || x== 'O' || x== 'U');
     if (vowel) {
         printf("%c is a vowel", x);
     }
