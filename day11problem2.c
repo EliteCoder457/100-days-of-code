@@ -19,7 +19,7 @@ else if (c > s) {
     printf("Loss Percentage = %.2f%%", percentage);
     } 
 else {
-    printf("No Profit, No Loss.\n");
+    printf("No Profit, No Loss.");
 } 
     
     return 0;
