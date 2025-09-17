@@ -1,4 +1,4 @@
-//Write a program to check if a number is a palindrome.
+//Write a program to check if a number is an Armstrong number.
 
 #include <stdio.h>
 int main(){
