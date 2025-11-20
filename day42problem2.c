@@ -1,14 +1,18 @@
+//Print each character of a string on a new line.
 #include <stdio.h>
-
 int main() {
-    char str[100];
-    int i = 0;
-    printf("Enter a string: ");
-    fgets(str, sizeof(str), stdin);
-    while (str[i] != '\0') {
-        if (str[i] != '\n')   
-            printf("%c\n", str[i]);
-        i++;
+    char str[200];
+    int i, v=0, c=0;
+    gets(str);
+    for(i=0; str[i]!='\0'; i++){
+        char ch = str[i];
+        if((ch>='a' && ch<='z') || (ch>='A' && ch<='Z')){
+            if(ch=='a'||ch=='e'||ch=='i'||ch=='o'||ch=='u'||
+               ch=='A'||ch=='E'||ch=='I'||ch=='O'||ch=='U')
+                v++;
+            else
+                c++;
+        }
     }
-    return 0;
+    printf("Vowels = %d\nConsonants = %d\n", v, c);
 }
