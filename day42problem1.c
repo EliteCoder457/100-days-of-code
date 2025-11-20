@@ -1,4 +1,4 @@
-//Print each character of a string on a new line.
+//Count vowels and consonants in a string.
 #include <stdio.h>
 int main() {
     char str[200];
