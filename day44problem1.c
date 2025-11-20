@@ -15,10 +15,10 @@ int main() {
         }
         else if ((str[i] >= 'A' && str[i] <= 'Z') ||
                  (str[i] >= 'a' && str[i] <= 'z')) {
-            // alphabet → ignore
+           
         }
         else {
-            special++;   // punctuation, symbols, etc.
+            special++;  
         }
         i++;
     }
