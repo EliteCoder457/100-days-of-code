@@ -1,17 +1,17 @@
 //Count characters in a string without using built-in length functions.
 #include <stdio.h>
+
 int main() {
     char str[100];
-    int count = 0;
+    int i = 0;
     printf("Enter a string: ");
-    fgets(str, sizeof(str), stdin);
+    scanf("%[^\n]", str);  
 
-    while (str[count] != '\0') {
-        count++;
+    while(str[i] != '\0') {
+        i++;
     }
-    if (count > 0 && str[count - 1] == '\n') {
-        count--;
-    }
-    printf("Number of characters = %d\n", count);
+    printf("Number of characters = %d", i);
+
     return 0;
 }
+
